@@ -1,0 +1,130 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+}
+
+* {
+    padding: 0px;
+    margin: 0px
+}
+
+ul li {
+    list-style: none;
+}
+
+#container {
+    height: 100%;
+}
+
+#latlng {
+    position: fixed;
+    height: 10vh;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+    font-size: 20px;
+    color: rgba(95, 95, 95, 0.795);
+    transition: all 0.5s;
+}
+
+#control-box {
+    position: fixed;
+    height: auto;
+    max-height: 6vh;
+    width: 18vw;
+    left: 20px;
+    top: 20px;
+    z-index: 10;
+    background-color: rgba(0, 153, 255, 0.322);
+    font-size: 28px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+#control-box:hover {
+    max-height: 50vh;
+    width: 18vw;
+    overflow: hidden;
+}
+
+#title {
+    height: 6vh;
+    line-height: 6vh;
+    font-weight: 700;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.301);
+}
+
+#carList li {
+    margin: 10px 10px;
+    height: 4vh;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 4vh;
+    background-color: rgba(230, 228, 196, 0.582);
+    border: 2px solid rgba(0, 153, 255, 0.322);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+#carList li:hover {
+    border: 2px solid rgb(19, 169, 189);
+    font-weight: bold;
+}
+
+.Btn {
+    margin: auto 8px;
+    width: 16%;
+    font-size: 16px;
+    background-color: rgba(151, 156, 156, 0.466);
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    border-radius: 6px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.Btn:hover {
+    border: 1px solid rgb(240, 240, 240);
+    background-color: rgba(59, 59, 59, 0.466);
+}
+
+#swiftBtn {
+    position: fixed;
+    right: 35px;
+    top: 50px;
+    z-index: 10;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: rgba(0, 153, 255, 0.39);
+    border: 1px solid rgba(119, 239, 255, 0.233);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#swiftBtn:hover {
+    background-color: rgba(0, 153, 255, 0.582);
+    border: 1px solid rgba(119, 239, 255, 0.301);
+}
+
+#chart {
+    display: none;
+    position: fixed !important;
+    right: 20px;
+    top: 80px;
+    z-index: 10;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    transition: all 0.5s;
+    /* visibility: hidden ; */
+}

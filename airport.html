@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>机场地勤车管理系统</title>
+    <link rel="stylesheet" href="./airport.css">
+    <script type="text/javascript"
+        src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=4mrPhejKC8MMP1adxzdGmjyCsz9Xuy2n"></script>
+    <script type="text/javascript" src="//api.map.baidu.com/library/TrackAnimation/src/TrackAnimation_min.js"></script>
+    <script type="text/javascript" src="./echarts.js"></script>
+</head>
+
+<body>
+    <div id="control-box">
+        <div id="title">机场地勤车管理系统</div>
+        <ul id="carList">
+        </ul>
+    </div>
+    <div id="latlng">1.0000,2.0000</div>
+    <div id="container"></div>
+    <button id="swiftBtn">展示图表</button>
+    <div id="chart"></div>
+</body>
+
+<script type="text/javascript">
+    let map = new BMapGL.Map("container", { minZoom: 18 });
+    // 创建地图实例 
+    let airportCenter = new BMapGL.Point(121.818569, 31.140732);
+    map.centerAndZoom(airportCenter, 18);
+    map.enableScrollWheelZoom(true);
+    map.setHeading(18);
+    map.setTilt(60);
+
+    let timer = null
+    function handleClick(e) {
+        timer && clearTimeout(timer)
+        timer = setTimeout(() => {
+            document.getElementById("latlng").innerHTML = "当前经纬：（"+ e.latlng.lng + '，' + e.latlng.lat+'）';
+        },500)
+    }
+    map.addEventListener('mousemove', handleClick);
+
+</script>
+<script type="module" src="./data.js"></script>
+<script type="module" src="./init.js"></script>
+<script type="module">
+    console.log(map.getOverlays())
+</script>
+
+</html>
