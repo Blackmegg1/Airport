@@ -2,6 +2,16 @@
 
 ![describe](./img/describe.png)
 
+## 展示
+总览
+![overview](./img/overview.png)
+
+查看历史轨迹
+![track](./img/track.png)
+
+路程统计图表
+![table](./img/table.png)
+
 ## 地图中心点（浦东国际机场）
 
 经纬度：121.818569,31.140732
@@ -19,7 +29,8 @@
 ## 注意点
 
 1. 使用VSCode的open with Live Serve打开airport.html
-2. 百度地图z-index = 9
-3. addEventListener自解除需要用函数表达式而不是匿名函数
-4. dom.style.att中只可以取到定义在元素标签上的或者由js写入的style属性，通过css定义的属性则取不到！！！
+2. 需要将鼠标移动到左上才有功能选项（设计缺陷）
+3. 百度地图z-index = 9
+4. addEventListener自解除需要用函数表达式而不是匿名函数
+5. dom.style.att中只可以取到定义在元素标签上的或者由js写入的style属性，通过css定义的属性则取不到！！！
 
