@@ -18,7 +18,8 @@
 
 ## 注意点
 
-1. 百度地图z-index = 9
-2. addEventListener自解除需要用函数表达式而不是匿名函数
-3. dom.style.att中只可以取到定义在元素标签上的或者由js写入的style属性，通过css定义的属性则取不到！！！
+1. 使用VSCode的open with Live Serve打开airport.html
+2. 百度地图z-index = 9
+3. addEventListener自解除需要用函数表达式而不是匿名函数
+4. dom.style.att中只可以取到定义在元素标签上的或者由js写入的style属性，通过css定义的属性则取不到！！！
 
